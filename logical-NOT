@@ -1,0 +1,24 @@
+#!/bin/bash
+
+<<mycom
+
+This example demonstrate NOT logical operator 
+mycom
+
+read -p "enter a number: " num
+[ ! $num -eq 10 ]
+if [[ $? -ne 0 ]]
+then
+	echo "the number is equal to 10"
+else
+	echo "the number is not equal to 10"
+fi
+
+<<mycom
+if [[ $a -ne 0 ]] 
+then
+     echo "the number is equal to 10"
+else
+     echo "the number is not equal to 10"
+fi
+mycom
